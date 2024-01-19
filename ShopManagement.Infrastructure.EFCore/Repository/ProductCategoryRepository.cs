@@ -1,30 +1,24 @@
 ﻿using System.Linq.Expressions;
+using _0_Framework.Infrastructure;
 using ShopManagement.Application.Contracts.ProductCategory;
 using ShopManagement.Domain.ProductCategoryAgg;
 
 namespace ShopManagement.Infrastructure.EFCore.Repository;
 
-public class ProductCategoryRepository:IProductCategoryRepository
+public class ProductCategoryRepository:RepositoryBase<long , ProductCategory> , IProductCategoryRepository
 {
 
     #region Constructure
 
     private readonly ShopContext _context;
 
-    public ProductCategoryRepository(ShopContext shopContext)
+    public ProductCategoryRepository(ShopContext shopContext):base(shopContext)
     {
         _context = shopContext;
     }
 
     #endregion
     
-    public void Create(ProductCategory entity)
-    {
-        _context.ProductCategories.Add(entity);
-    }
-
-    public ProductCategory Get(long id)
-        => _context.ProductCategories.Find(id);
     
 
     public EditProductCategory GetDetails(long id)
@@ -57,15 +51,5 @@ public class ProductCategoryRepository:IProductCategoryRepository
 
         return query.OrderByDescending(x => x.Id).ToList();
     }
-    public List<ProductCategory> GetAll()
-        => _context.ProductCategories.ToList();
-
-    public bool Exists(Expression<Func<ProductCategory, bool>> expression)
-        => _context.ProductCategories.Any(expression);
-    
-
-    public void SaveChanges()
-    {
-        _context.SaveChanges();
-    }
+   
 }

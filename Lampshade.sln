@@ -18,6 +18,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SM.Infrastructure", "SM.Inf
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopManagement.Infrastructure.EFCore", "ShopManagement.Infrastructure.EFCore\ShopManagement.Infrastructure.EFCore.csproj", "{C571A4BD-CCFF-4ACB-83BD-29F028A2875F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopManagement.Configuration", "ShopManagement.Configuration\ShopManagement.Configuration.csproj", "{B27EF454-57DD-4C00-9906-2784533DF22D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceHost", "ServiceHost\ServiceHost.csproj", "{052C8993-5327-47ED-8CA6-8FBA2266B616}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +35,7 @@ Global
 		{1CC24A91-D29C-4146-9C9A-5C9C2C576CCF} = {AA45BB04-1F55-440A-B5B6-8A8408CDABD9}
 		{85E71A3A-85D0-4792-A517-F5D5C708BBA0} = {FFAAA60E-8821-4538-9910-327213D9B980}
 		{C571A4BD-CCFF-4ACB-83BD-29F028A2875F} = {85E71A3A-85D0-4792-A517-F5D5C708BBA0}
+		{B27EF454-57DD-4C00-9906-2784533DF22D} = {85E71A3A-85D0-4792-A517-F5D5C708BBA0}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{A3B038BA-50E0-4FD9-9E5E-F83CC2B64BCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -53,5 +58,13 @@ Global
 		{C571A4BD-CCFF-4ACB-83BD-29F028A2875F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C571A4BD-CCFF-4ACB-83BD-29F028A2875F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C571A4BD-CCFF-4ACB-83BD-29F028A2875F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B27EF454-57DD-4C00-9906-2784533DF22D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B27EF454-57DD-4C00-9906-2784533DF22D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B27EF454-57DD-4C00-9906-2784533DF22D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B27EF454-57DD-4C00-9906-2784533DF22D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{052C8993-5327-47ED-8CA6-8FBA2266B616}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{052C8993-5327-47ED-8CA6-8FBA2266B616}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{052C8993-5327-47ED-8CA6-8FBA2266B616}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{052C8993-5327-47ED-8CA6-8FBA2266B616}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
