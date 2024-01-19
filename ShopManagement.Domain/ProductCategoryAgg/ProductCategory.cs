@@ -13,7 +13,7 @@ public class ProductCategory:EntityBase
     public string MetaDescription { get; private set; }
     public string Slug{ get; private set; }
 
-    public ProductCategory(DateTime creationDate, string name, string description, 
+    public ProductCategory(string name, string description, 
         string picture, string pictureAlt, string pictureTitle, string keywords,
         string metaDescription, string slug) 
     {
